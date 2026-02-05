@@ -1,0 +1,11 @@
+p{
+    color: brown;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    padding: 30px;
+    border: 5px solid indianred;
+}
