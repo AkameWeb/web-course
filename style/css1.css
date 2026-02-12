@@ -1,5 +1,5 @@
 p{
-    color: brown;
+    color: rgb(0, 0, 0);
 }
 
 .box{
@@ -7,5 +7,19 @@ p{
     height: 100px;
     margin: 20px;
     padding: 30px;
-    border: 5px solid indianred;
+    border: 5px solid rgb(0, 0, 0);
+}
+ /*
+body{
+    background-color: rgba(3, 0, 201, 0.178);
+    background-attachment: local;
+    background-image: url('https://habrastorage.org/getpro/habr/upload_files/2f2/2ef/594/2f22ef594a56d6bc0cd610d465a1508b.png');
+    background-clip: border-box;
+    background-image: linear-gradient(red, green);
+}
+*/
+
+.colorText{
+    color: brown;
+    font-weight: 800;
 }

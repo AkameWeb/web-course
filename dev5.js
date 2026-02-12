@@ -7,4 +7,13 @@
 // import * as constants ftom "./program/dev1"; ко всем импортируемым файлам можно обрашатся можно будет через точку 
 // Пример constants.a
 
-// Видео 17
+// Видео 29
+
+const boxElement = document.querySelector('.box');
+
+
+console.log(boxElement.offsetWidth);
+
+console.log(boxElement.offsetHeight);
+
+// Видео 30
