@@ -16,4 +16,28 @@ console.log(boxElement.offsetWidth);
 
 console.log(boxElement.offsetHeight);
 
-// Видео 30
+// Видео 31
+
+const firstParagraf = document.getElementById('paragraf');
+const button = document.getElementById('click');
+
+// создание объекта
+const createEl = document.createElement('p');
+
+createEl.textContent = 'Text';
+createEl.classList.add('prTest');
+
+//клонирование 
+const firstParagrafClone = firstParagraf.cloneNode();
+boxElement.after(firstParagrafClone);
+
+
+
+//boxElement.prepend(createEl);
+//boxElement.after(createEl);
+
+
+button.addEventListener('click', () => {
+    firstParagraf.textContent = 'Click';
+    
+});

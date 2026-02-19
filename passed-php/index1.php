@@ -40,7 +40,22 @@
         }
     }
     $obj = new DestractionClass();
-    
+
+    class Student extends User{
+        public $unfo;
+        public $prava;
+
+         function __construct($name, $password, $email, $unfo, $prava){
+            parent::__construct($name, $password, $email);
+            $this->unfo = $unfo;
+            $this->prava = $prava;
+        }
+        function dev(){
+            echo 'Student only';
+        }
+    }
+    $study = new Student('User', 'r4tertre', 'Test@gmail.com', 'Russian', 'Base');
+    echo $study->dev();
     ?>
 </body>
 </html>
