@@ -7,6 +7,18 @@
 </head>
 <body>
     <?php
+
+    interface ferstinter{
+        public function getName();
+    }
+
+    class InfStidy implements ferstinter{
+        public $name = "Alex";
+
+        public function getName(){
+            echo $this->$name;
+        }
+    }
     class User{
         public $name;
         public $password;
@@ -56,6 +68,22 @@
     }
     $study = new Student('User', 'r4tertre', 'Test@gmail.com', 'Russian', 'Base');
     echo $study->dev();
+
+    class Base{
+        public function sayHello(){
+            echo "Hello";
+        }
+    }
+    trait sayWorld{
+        public function syaHello(){
+            parant::sayHello();
+            echo "World";
+        }
+    }
+    class MyHelloWorld extends Base{
+        use sayWorld;
+    }
+    $say->sayHello();
     ?>
 </body>
 </html>

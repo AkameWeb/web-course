@@ -41,3 +41,12 @@ button.addEventListener('click', () => {
     firstParagraf.textContent = 'Click';
     
 });
+
+// Видео 35 
+ document.addEventListener('keydown', (event) => {
+    console.log('keydown event:', event);
+ })
+
+  document.addEventListener('keyup', (event) => {
+    console.log('keyup event:', event);
+ })
