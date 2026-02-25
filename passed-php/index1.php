@@ -30,6 +30,14 @@
             $this->email = $email;
         }
 
+        function srtId($name){
+            $this->name = $name;
+        }
+        public function __clone(){
+            $this->name = "null";
+            echo "clone";
+        }
+
         function getInfo(){
             return "{$this->name}"."{$this->password}"."{$this->email}";
         }
@@ -84,6 +92,8 @@
         use sayWorld;
     }
     $say->sayHello();
+
+
     ?>
 </body>
 </html>
